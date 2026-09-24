@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Floppy Dan</title>
+  <title>Floppy Hori</title>
   <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
   <style>
     body {
@@ -325,7 +325,7 @@
 <body>
 
   <div id="loadingScreen">
-    <h1>Floppy Dan</h1>
+    <h1>Floppy Hori</h1>
     <div class="spinner"></div>
   </div>
 
@@ -611,7 +611,7 @@
     diffSelect.addEventListener("change", e => { cfg.diff = e.target.value; localStorage.setItem("fd_diff", cfg.diff); });
 
     shareBtn.addEventListener("click", () => {
-      const shareText = `I just scored ${score} points in Floppy Dan! Can you beat my high score?`;
+      const shareText = `I just scored ${score} points in Floppy Hori! Can you beat my high score?`;
       
       const fallbackShare = () => {
         const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}`;
@@ -620,7 +620,7 @@
 
       if (navigator.share) {
         navigator.share({
-          title: 'Floppy Dan',
+          title: 'Floppy Hori',
           text: shareText
         }).catch(err => {
           console.log('Native share failed, using fallback.', err);
